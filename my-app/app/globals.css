@@ -28,3 +28,22 @@ body {
 .avatar {
 	border-radius: 50%;
 }
+
+button {
+	padding: 5px;
+	display: block;
+	background-color: greenyellow;
+	color: #0a0a0a;
+	transition-duration: 0.4s;
+	border-radius: 5px;
+}
+
+button:hover {
+	background-color: red;
+	color: white;
+}
+
+button:active {
+	background-color: black;
+	color: greenyellow;
+}
