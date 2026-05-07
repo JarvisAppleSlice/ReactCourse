@@ -160,3 +160,36 @@ body {
 	background-color: black;
 	color: blueviolet;
 }
+
+/* styles for profile */
+
+.panel {
+	border: 1px solid #aaa;
+	border-radius: 10px;
+	border-width: 5px;
+	margin-top: 20px;
+	padding: 10px;
+	width: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* styles for story tray */
+
+.storytray {
+	border: 1px solid #aaa;
+	border-radius: 6px;
+	float: left;
+	margin: 5px;
+	margin-bottom: 20px;
+	padding: 5px;
+	width: 70px;
+	height: 100px;
+	align-items: center;
+}
+.stories {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
