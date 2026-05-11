@@ -162,15 +162,15 @@ function tasksReducer(tasks, action) {
 }
 
 const initialTasks = [
-	{ id: 0, text: "Philosopher’s Path", done: true },
-	{ id: 1, text: "Visit the temple", done: false },
-	{ id: 2, text: "Drink matcha", done: false },
+	{ id: 0, text: "Eat Breakfast", done: true },
+	{ id: 1, text: "Eat Lunch", done: false },
+	{ id: 2, text: "Eat Dinner", done: false },
 ];
 
 export default function TaskApp() {
 	return (
 		<TasksProvider>
-			<h1>Day off in Kyoto</h1>
+			<h1>A day in the Life...</h1>
 			<AddTask />
 			<TaskList />
 		</TasksProvider>
