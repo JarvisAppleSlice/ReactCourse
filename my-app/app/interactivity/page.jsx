@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 // Fix a request counter
-
+//--------------------
 // export default function RequestTracker() {
 // 	const [pending, setPending] = useState(0);
 // 	const [completed, setCompleted] = useState(0);
@@ -30,6 +30,7 @@ import { useState } from "react";
 // }
 
 // State Queue challenge
+//--------------------
 
 // function getFinalState(baseState, queue) {
 // 	let finalState = baseState;
@@ -91,6 +92,7 @@ import { useState } from "react";
 // }
 
 // Incorrect State challenge
+//--------------------
 
 // export default function Scoreboard() {
 // 	const [player, setPlayer] = useState({
@@ -122,9 +124,12 @@ import { useState } from "react";
 
 // 	return (
 // 		<>
-// 			<label>
-// 				Score: <b>{player.score}</b> <button onClick={handlePlusClick}>+1</button>
-// 			</label>
+// 			<div>
+// 				Score: <b>{player.score}</b>
+// 				<div>
+// 					<button onClick={handlePlusClick}>+1</button>
+// 				</div>
+// 			</div>
 // 			<label>
 // 				First name:
 // 				<input value={player.firstName} onChange={handleFirstNameChange} />
@@ -138,6 +143,7 @@ import { useState } from "react";
 // }
 
 // Mutation Challenge
+//--------------------
 
 function Background({ position }) {
 	return (
