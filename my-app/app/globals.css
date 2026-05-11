@@ -194,3 +194,32 @@ body {
 	justify-content: center;
 	align-items: center;
 }
+
+/* styles for interactivity */
+
+body {
+	height: 280px;
+}
+select {
+	margin-bottom: 10px;
+	position: relative;
+}
+
+body {
+	font-family: sans-serif;
+	margin: 20px;
+	padding: 0;
+}
+
+.dropdown {
+	position: relative;
+	max-width: 200px;
+	color: black;
+	background-color: lightblue;
+	border-color: #fff;
+	border-width: 0.5px;
+}
+
+.color-option {
+	color: #0a0a0a;
+}
