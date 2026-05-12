@@ -37,7 +37,7 @@ button {
 	color: #0a0a0a;
 	transition-duration: 0.4s;
 	border-radius: 5px;
-	max-width: fit-content;
+	/* max-width: fit-content; */
 }
 
 button:hover {
@@ -236,4 +236,98 @@ select {
 	align-items: center;
 	margin: 5px;
 	text-align: center;
+}
+
+/* Battleship */
+
+.bs-square {
+	background-image: radial-gradient(blue, blueviolet);
+	border: 1px solid #999;
+	float: left;
+	font-size: 65px;
+	font-weight: bold;
+	line-height: 70px;
+	height: 70px;
+	text-align: center;
+	width: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hit {
+	background-image: radial-gradient(blue, blueviolet, red);
+}
+
+.bs-board-row:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+.bs-status {
+	margin-bottom: 10px;
+}
+.bs-game {
+	display: flex;
+	flex-direction: row;
+}
+
+.bs-game-info {
+	margin-left: 20px;
+}
+.bs-title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.bs-turn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 50px;
+}
+.bs-main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.bs-board-title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.bs-reset {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+}
+.bs-board {
+	display: inline-block;
+}
+
+.bs-label-row,
+.bs-board-row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.bs-label {
+	width: 80px;
+	height: 30px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-weight: bold;
+}
+
+.bs-label-empty {
+	width: 70px;
+	height: 70px;
 }
