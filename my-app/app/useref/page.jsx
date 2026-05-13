@@ -1,5 +1,6 @@
 "use client";
 import { useRef, useState } from "react";
+import { flushSync } from "react-dom";
 
 // ----------------------
 // Walkthrough...
@@ -77,6 +78,93 @@ import { useRef, useState } from "react";
 // 	}
 
 // 	return <button onClick={handleClick}>You clicked {count} times</button>;
+// }
+
+// Focusing a text input
+
+// function MyInput({ ref }) {
+// 	return <input ref={ref} />;
+// }
+
+// export default function MyForm() {
+// 	const inputRef = useRef(null);
+
+// 	function handleClick() {
+// 		inputRef.current.focus();
+// 	}
+
+// 	function handleClick() {
+// 		inputRef.current.focus();
+// 	}
+// 	return (
+// 		<>
+// 			<MyInput ref={inputRef} />
+// 			<button onClick={handleClick}>Focus the input</button>
+// 		</>
+// 	);
+// }
+
+// scrolling to an element
+
+// export default function CatFriends() {
+// 	const firstCatRef = useRef(null);
+// 	const secondCatRef = useRef(null);
+// 	const thirdCatRef = useRef(null);
+
+// 	function handleScrollToFirstCat() {
+// 		firstCatRef.current.scrollIntoView({
+// 			behavior: "smooth",
+// 			block: "nearest",
+// 			inline: "center",
+// 		});
+// 	}
+
+// 	function handleScrollToSecondCat() {
+// 		secondCatRef.current.scrollIntoView({
+// 			behavior: "smooth",
+// 			block: "nearest",
+// 			inline: "center",
+// 		});
+// 	}
+
+// 	function handleScrollToThirdCat() {
+// 		thirdCatRef.current.scrollIntoView({
+// 			behavior: "smooth",
+// 			block: "nearest",
+// 			inline: "center",
+// 		});
+// 	}
+
+// 	return (
+// 		<>
+// 			<nav className="scroll-nav">
+// 				<button onClick={handleScrollToFirstCat}>Neo</button>
+// 				<button onClick={handleScrollToSecondCat}>Millie</button>
+// 				<button onClick={handleScrollToThirdCat}>Bella</button>
+// 			</nav>
+// 			<div className="scroll-div">
+// 				<ul className="scroll-ul">
+// 					<li className="scroll-li">
+// 						<img src="https://placecats.com/neo/300/200" alt="Neo" ref={firstCatRef} />
+// 					</li>
+// 					<li className="scroll-li">
+// 						<img
+// 							src="https://placecats.com/millie/200/200"
+// 							alt="Millie"
+// 							ref={secondCatRef}
+// 						/>
+// 					</li>
+// 					<li className="scroll-li">
+// 						<img
+// 							src="https://placecats.com/bella/199/200"
+// 							alt="Bella"
+// 							ref={thirdCatRef}
+// 						/>
+// 					</li>
+// 				</ul>
+// 			</div>
+// 		</>
+// 	);
 // }
 
 // ----------------------
@@ -250,8 +338,6 @@ import { useRef, useState } from "react";
 // }
 
 // Scroll
-
-import { flushSync } from "react-dom";
 
 // export default function CatFriends() {
 // 	const selectedRef = useRef(null);
