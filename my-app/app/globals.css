@@ -37,7 +37,7 @@ button {
 	color: #0a0a0a;
 	transition-duration: 0.4s;
 	border-radius: 5px;
-	/* max-width: fit-content; */
+	max-width: 100px;
 }
 
 button:hover {
@@ -330,4 +330,45 @@ select {
 .bs-label-empty {
 	width: 70px;
 	height: 70px;
+}
+/* styles for scroll */
+
+.scroll-ul {
+	padding-inline-start: 20px;
+}
+
+.scroll-li {
+	padding: 0.5rem;
+}
+
+.active {
+	background: rgba(0, 1200, 150, 0.4);
+}
+
+.scroll-ul,
+.scroll-li {
+	list-style: none;
+	white-space: nowrap;
+	display: flex;
+	padding: 0.5rem;
+	gap: 10px;
+	flex-shrink: 0;
+}
+
+img {
+	padding: 10px;
+	margin: -10px;
+	transition: background 0.2s linear;
+}
+
+.scroll-button {
+	margin: 0.25rem;
+}
+.scroll-nav {
+	text-align: center;
+}
+
+.scroll-div {
+	width: 100%;
+	overflow-x: hidden;
 }
