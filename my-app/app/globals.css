@@ -410,3 +410,13 @@ input[type="checkbox"] {
 	width: auto;
 	flex: 0 0 auto;
 }
+
+label,
+button {
+	display: block;
+	margin-bottom: 5px;
+}
+.dark {
+	background: #aaaaaa73;
+	color: aqua;
+}
