@@ -23,6 +23,7 @@ body {
 	background: var(--background);
 	color: var(--foreground);
 	font-family: Arial, Helvetica, sans-serif;
+	color: greenyellow;
 }
 
 .avatar {
@@ -419,4 +420,65 @@ button {
 .dark {
 	background: #aaaaaa73;
 	color: aqua;
+}
+
+/* ----------------------- */
+
+.typing-container {
+	max-width: 700px;
+	margin: 50px auto;
+	padding: 32px;
+}
+
+.typing-title {
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-size: 2rem;
+	text-align: center;
+}
+
+.typing-instructions {
+	margin-bottom: 20px;
+	font-size: 1rem;
+	color: #cfd8e3;
+}
+
+.prompt-box {
+	padding: 20px;
+	background-color: #171717;
+	border: 2px solid #d6dee8;
+	border-radius: 10px;
+	font-size: 1.2rem;
+	line-height: 1.6;
+	margin-bottom: 20px;
+}
+
+.typing-textarea {
+	width: 100%;
+	min-height: 160px;
+	padding: 16px;
+	font-size: 1rem;
+	border: 2px solid #cfd8e3;
+	border-radius: 10px;
+	resize: vertical;
+	box-sizing: border-box;
+	outline: none;
+	transition: border-color 0.2s ease;
+}
+
+.typing-textarea:focus {
+	border-color: #4a90e2;
+}
+
+.stats {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.wpm-result {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: #1f7a1f;
 }
