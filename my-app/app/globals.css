@@ -398,3 +398,15 @@ img {
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
+
+.checkbox-row {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	width: fit-content;
+}
+
+input[type="checkbox"] {
+	width: auto;
+	flex: 0 0 auto;
+}
